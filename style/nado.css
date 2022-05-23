@@ -1,0 +1,33 @@
+html
+{
+    background-color: #f0e7fc;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+    color:#25054f;
+    padding:0 10px 0 10px;
+}
+a
+{
+    color:#25054f;
+    text-decoration: none;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+}
+div
+{
+    display:flex;
+
+}
+.sort
+{
+    justify-content: center;
+}
