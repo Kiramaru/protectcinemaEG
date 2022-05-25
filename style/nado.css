@@ -1,6 +1,7 @@
 html
 {
     background-color: #f0e7fc;
+    color:#25054f;
 }
 header
 {
@@ -9,12 +10,10 @@ header
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items:center;
-    color:#25054f;
     padding:0 10px 0 10px;
 }
 a
 {
-    color:#25054f;
     text-decoration: none;
 }
 .footer
@@ -29,5 +28,18 @@ div
 }
 .sort
 {
-    justify-content: center;
+    justify-content: left;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20px;
+}
+form > select
+{
+    background-color: #baa9d1;
+    color:#25054f;
+}
+form > select:active
+{
+    background-color: #8f75b0;
+    color:#25054f;
 }
