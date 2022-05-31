@@ -38,15 +38,34 @@ form > select
     background-color: #baa9d1;
     color:#25054f;
 }
-form > select:active
-{
-    background-color: #8f75b0;
-    color:#25054f;
-}
 .sel1
 {
     display:block;
     width: 250px;
     height: 30px;
     margin-top: 20px;
+}
+.sinema
+{
+    margin:2% 0 2% 0; 
+    justify-content: center;
+    flex-direction:row;
+}
+.sinema > p
+{
+    display: flex;
+    margin: 0 3% 0 3%; 
+    flex-direction: row;
+}
+.sinema > table
+{
+    display:flex;
+}
+.img
+{
+    display: flex;
+}
+.info
+{
+    flex-direction: column;
 }
