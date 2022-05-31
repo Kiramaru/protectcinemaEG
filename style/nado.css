@@ -88,3 +88,23 @@ form > select
     height: 50px; 
     border-radius: 50%;
 }
+.pagination :hover
+{
+    background-color: #a089bd;
+    border-radius: 5px;
+}
+.pagination
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pagination > p
+{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #25054f;
+}
