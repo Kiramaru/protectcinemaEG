@@ -47,7 +47,7 @@ form > select
 }
 .sinema
 {
-    margin:2% 15% 2% 15%; 
+    margin:2% 25% 2% 25%; 
     padding: 2% 0 2% 0;
     border-radius: 20px 20px 20px 20px;
     justify-content: center;
@@ -92,6 +92,7 @@ form > select
 {
     background-color: #a089bd;
     border-radius: 5px;
+    transition: background-color .3s;
 }
 .pagination
 {
@@ -107,4 +108,5 @@ form > select
     justify-content: center;
     border-radius: 5px;
     border: 1px solid #25054f;
+    margin: 0 6px;
 }

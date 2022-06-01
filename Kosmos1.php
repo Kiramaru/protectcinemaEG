@@ -32,36 +32,49 @@
                     <option value="хрон">По хронометражу</option>
                     <option value="возр">По возрасту</option>
                     <option value="страна">По стране</option>
-                </select></p>
+                    </p></select>
             </form>
         </div>
-        <div class="sinema">
-            <img src="image/16453148555_14.jpg">
-            <div class="info">
-                <div class="margin">
-                    <p>Страна</p>
-                    <p>Жанр</p>
-                    <p>Хронометраж</p>
-                </div>
-                <div class="info1">
-                    <table>
-                        <tr>
-                            <td><h3>Название</h3></td>
-                            <td class="bol">Возрасн огр</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <p>Информация о фильме</p>
-                            </td>
-                        </tr>
-                        <tr class="margin">
-                            <td><p>Цена за билет</p></td>
-                            <td><p>Забронировать</p></td>
-                        </tr>
-                    </table>
+        <?
+        include 'function.php';
+        $conn = Connect();
+        mysqli_set_charset($conn, "utf8");
+        $sqlbook = 'SELECT Name, Country, Genre, Timing, Poster, Information, Ticket_price, Age_imit FROM sinema';
+        $resultbook = mysqli_query($conn, $sqlbook);
+        ?>
+        <? while($row = mysqli_fetch_array($resultbook))
+            {
+                $image = $row['Poster'];
+        ?>
+            <div class="sinema">
+                <?echo "<img src=$image>";?>
+                <div class="info">
+                    <div class="margin">
+                        <p><?echo $row['Country'];?></p>
+                        <p><?echo $row['Genre'];?></p>
+                        <p><?echo $row['Timing'];?></p>
+                    </div>
+                <table>
+                    <tr>
+                        <td><h3><?echo $row['Name'];?></h3></td>
+                        <td class="bol"><?echo $row['Age_imit'];?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p><?echo $row['Information'];?></p>
+                        </td>
+                    </tr>
+                    <tr class="margin">
+                        <td><p><?echo $row['Ticket_price'] . " " ."sotcery gems";?></p></td>
+                        <td><p>Забронировать</p></td>
+                    </tr>
+                </table>
                 </div>
             </div>
-        </div>
+        <?
+            }
+        ?>
+        </table>
         <div class="pagination">
             <p><</p>  
             <p>1</p>
