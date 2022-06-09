@@ -47,8 +47,8 @@ form > select
 }
 .sinema
 {
-    margin:2% 25% 2% 25%; 
-    padding: 2% 0 2% 0;
+    margin:2% 23% 2% 23%; 
+    padding: 2% 2% 2% 2%;
     border-radius: 20px 20px 20px 20px;
     justify-content: center;
     flex-direction:row;
@@ -64,9 +64,10 @@ form > select
 {
     display:flex;
 }
-.img
+img
 {
     display: flex;
+    border-radius: 20px 20px 20px 20px;
 }
 .margin > p
 {
@@ -84,9 +85,13 @@ form > select
 }
 .bol
 {
-    width: 50px; 
-    height: 50px; 
+    display: flex;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    background-color: #FFFDE8;
+    justify-content: center;
+    align-items: center;
 }
 .pagination :hover
 {
@@ -109,4 +114,9 @@ form > select
     border-radius: 5px;
     border: 1px solid #25054f;
     margin: 0 6px;
+}
+.sinema34
+{
+    display: flex;
+    flex-direction: row;
 }
